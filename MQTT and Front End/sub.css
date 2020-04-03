@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    background: url("image/airplane.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+nav {
+    list-style: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 55%;
+    right: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 4.375em;
+    padding-top: 1.438em;
+    position: relative;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 0.3125rem;
+    background-color: white;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+.Subscribe-title{
+    margin-top: 6.25em;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+.Subscribe-title h1{
+    font-size: 1em;
+    line-height: 3em;
+}
+.Subscribe-title h2{
+    font-size: 3em;
+}
+form{
+    margin-top: 3.125em;
+    transition: all 4s ease-in-out;
+}
+.form-control{
+    width: 37.5em;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 0.0625em solid white;
+    color: #ffffff;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+input{
+    height: 45px;
+}
+form .submit{
+    background: #ff5722;
+    border-color: transparent;
+    color: #ffffff;
+    font-size: 1.25em;
+    font-weight: bold;
+    letter-spacing: 0.125em;
+    height: 3.125em;
+    margin-top: 1.25em;
+}
+form .submit:hover{
+    background-color: #f44366;
+    cursor: pointer;
+}

@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    background: url("image/MQTT.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
 nav {
     list-style: none;
     position: absolute;
@@ -15,7 +36,7 @@ nav li {
 }
 
 nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.875rem;
@@ -29,7 +50,7 @@ nav a::before {
     content: '';
     display: block;
     height: 0.3125rem;
-    background-color: black;
+    background-color: white;
 
     position: absolute;
     top: 0;

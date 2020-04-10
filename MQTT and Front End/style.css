@@ -1,53 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
-
 body {
-    background: url("image/home.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+    background: url("image/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
-
 .container {
     width: 80%;
     margin: 0 auto;
 }
-
-header {
-    color: white;
-}
-
 header::after {
     content: '';
     display: table;
     clear: both;
 }
-
-.logo {
-    position: absolute;
-    width: 10%;
-    height: 10%;
-   
-    margin-left: -100%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    z-index: 100;
-}
-
 nav {
     list-style: none;
     position: absolute;
     top: 0;
-    bottom: 0%;
+    bottom: 0;
     left: 55%;
     right: 0;
 }
+
 nav li {
     display: inline-block;
     margin-left: 4.375em;
-    padding-top: 2em;
+    padding-top: 1.438em;
     position: relative;
 }
 
@@ -56,11 +40,10 @@ nav a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.875rem;
-
 }
 
 nav a:hover {
-    color: blue;
+    color: black;
 }
 
 nav a::before {
@@ -79,10 +62,8 @@ nav a::before {
 nav a:hover::before {
     width: 100%;
 }
-* {
-    margin: 0;
-    height: 100%;
-}
+
+
 .inner-container {
     text-align: center;
     position: absolute;
@@ -94,7 +75,7 @@ nav a:hover::before {
 
 h1 {
     font-size: 7em;
-    font-family: "Shadows into Light", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h2 {
@@ -105,16 +86,12 @@ h2 {
     font-weight: 400;
 }
 
-a {
-    margin-top: 1.250em;
-    font-size: 1.3em;
-    font-family: "Source Sans Pro", sans-serif;
-}
 
 .btn {
     display: inline-block;
     width: 12.500em;
     font-weight: bold;
+    font-size: 1.3em;
     padding: 0.625rem;
     color: #fff;
     border: 0.25rem solid #fff;
@@ -132,10 +109,11 @@ a {
 }
 
 
-.btn2 {
+.btn-sub {
     display: inline-block;
     width: 12.500em;
     font-weight: bold;
+    font-size: 1.3em;
     padding: 0.625rem;
     color: #fff;
     border: 0.25rem solid #fff;
@@ -145,9 +123,10 @@ a {
     transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 
-.btn2:hover,
-.btn2:active {
+.btn-sub:hover,
+.btn-sub:active {
     background-color: white;
     color: #000;
-    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
+
